@@ -107,6 +107,9 @@ We tried 27 densepose models from detectron 2 project, and the models mainly div
 - 
 - 
 
+## Result
+
+https://drive.google.com/drive/folders/1b99Z1U0DFxgHCRWzdpKr7_ZUjMSr4feh?usp=sharing
 
 
 
