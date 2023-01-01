@@ -83,8 +83,12 @@ By comparing the different approaches:
 ![](/Image/Screenshot_8.png)
 
 
+## OurDataset
+We scrapped more than 5000 person images with clothes using "" tool to scrap datasets from different clothes websites such as Zara, Zalando, and Farfech.
+Our dataset was used later for the model's performance evaluation on our problem and trained other models to be more accurate and fit the business requirements.
+
+
 
 
 # References:
 [1] Güler, R. A., Neverova, N., &amp; Kokkinos, I. (2018, February 1). DensePose: Dense human pose estimation in the wild. arXiv.org. Retrieved December 31, 2022, from https://arxiv.org/abs/1802.00434v1 
-
