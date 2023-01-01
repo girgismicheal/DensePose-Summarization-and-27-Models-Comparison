@@ -87,6 +87,12 @@ By comparing the different approaches:
 We scrapped more than 5000 person images with clothes using "" tool to scrap datasets from different clothes websites such as Zara, Zalando, and Farfech.
 Our dataset was used later for the model's performance evaluation on our problem and trained other models to be more accurate and fit the business requirements.
 
+## Methodology
+We scrapped a dataset of 5000 images from diverse websites, then we design our evaluation set and performance metric of each model for the dense pose we evaluate the model's part index by the human expert eye due to our problem limitations.
+Then we tried different state-of-the-art models in this area and the best project per the writing time was "detectron 2" which was developed by Facebook, they trained 27 models and we tried all of them to evaluate their performance and suitability on our problem.
+![](/Image/Screenshot_9.png)
+The evaluation process takes around 2 days to be completed on our GPU as we selected 300 image only out of 5000 as the inference time of the models take around 3 to 5 seconds per image and we have (27 models*300 images) = 8100 images so it takes a little bit long time.
+
 
 
 
