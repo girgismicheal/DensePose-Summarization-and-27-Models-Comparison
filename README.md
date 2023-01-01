@@ -82,3 +82,9 @@ By comparing the different approaches:
 
 ![](/Image/Screenshot_8.png)
 
+
+
+
+# References:
+[1] Güler, R. A., Neverova, N., &amp; Kokkinos, I. (2018, February 1). DensePose: Dense human pose estimation in the wild. arXiv.org. Retrieved December 31, 2022, from https://arxiv.org/abs/1802.00434v1 
+
