@@ -112,6 +112,27 @@ We tried 27 densepose models from detectron 2 project, and the models mainly div
 https://drive.google.com/drive/folders/1b99Z1U0DFxgHCRWzdpKr7_ZUjMSr4feh?usp=sharing
 
 
+### Deployment
+We provided a docker image to be easy to use and the steps are:
+
+- Unzip the "densepose_docker" folder.
+- In the 'densepose_docker' folder write this command "docker build -t 'gigo' ." it is expected to take a long time to build the image.
+- Then the command "docker run -it -d --name densepose -v your_path/densepose_docker:/home/appuser -p 8081:8081 gigo bash" please make sure to replace your_path with the path you unzip the folder in.
+- Finally, run the command "docker exec -it densepose bash"
+- in bash write:
+  - cd Densepose
+  - python3 app.py
+- open postman:
+  - Header: http://127.0.0.1:8081/densepose
+  - body
+  {
+      "DenseRootDir":"../efs/Datasets/test/image-densepose/",
+      "ClientID":"GM",
+      "FileName":"00009",
+      "ImagePath":"../efs/Datasets/test/image/GM/0000"
+  } 
+- After sending the request expected to find the densepose image in this path "/efs/Datasets/test/image/GM/0000" with the name 0009.jpg
+
 
 # References:
 [1] Güler, R. A., Neverova, N., &amp; Kokkinos, I. (2018, February 1). DensePose: Dense human pose estimation in the wild. arXiv.org. Retrieved December 31, 2022, from https://arxiv.org/abs/1802.00434v1 
