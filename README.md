@@ -93,6 +93,20 @@ Then we tried different state-of-the-art models in this area and the best projec
 ![](/Image/Screenshot_9.png)
 The evaluation process takes around 2 days to be completed on our GPU as we selected 300 image only out of 5000 as the inference time of the models take around 3 to 5 seconds per image and we have (27 models*300 images) = 8100 images so it takes a little bit long time.
 
+## Experiment
+I have designed a dataset to cover a diverse dataset distribution as follows:
+- 100 images from the HR-VITON dataset
+- 60 Zalando (males)
+- 20 Zara (males)
+- 20 Farech (males)
+- 20 Farech (females)
+
+The above set of data just to validate the stability of the models over different distribution.
+
+We tried 27 densepose models from detectron 2 project, and the models mainly divided into n families as follows:
+- 
+- 
+
 
 
 
