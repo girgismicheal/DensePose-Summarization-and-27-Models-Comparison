@@ -104,9 +104,37 @@ I have designed a dataset to cover a diverse dataset distribution as follows:
 The above set of data just to validate the stability of the models over different distribution.
 
 We tried 27 densepose models from detectron 2 project, and the models mainly divided into n families as follows:
-- 
-- 
-
+```python
+models = [
+"R_50_FPN_s1x_legacy",
+"R_101_FPN_s1x_legacy",
+"R_50_FPN_s1x",
+"R_101_FPN_s1x",
+"R_50_FPN_DL_s1x",
+"R_101_FPN_DL_s1x",
+"R_50_FPN_WC1_s1x",
+"R_50_FPN_WC2_s1x",
+"R_50_FPN_DL_WC1_s1x",
+"R_50_FPN_DL_WC2_s1x",
+"R_101_FPN_WC1_s1x",
+"R_101_FPN_WC2_s1x",
+"R_101_FPN_DL_WC1_s1x",
+"R_101_FPN_DL_WC2_s1x",
+"R_50_FPN_WC1M_s1x",
+"R_50_FPN_WC2M_s1x",
+"R_50_FPN_DL_WC1M_s1x",
+"R_50_FPN_DL_WC2M_s1x",
+"R_101_FPN_WC1M_s1x",
+"R_101_FPN_WC2M_s1x",
+"R_101_FPN_DL_WC1M_s1x",
+"R_101_FPN_DL_WC2M_s1x",
+"R_50_FPN_DL_WC1M_3x_Atop10P_CA",
+"R_50_FPN_DL_WC1M_3x_Atop10P_CA_B_uniform",
+"R_50_FPN_DL_WC1M_3x_Atop10P_CA_B_uv",
+"R_50_FPN_DL_WC1M_3x_Atop10P_CA_B_finesegm",
+"R_50_FPN_DL_WC1M_3x_Atop10P_CA_B_coarsesegm",
+]
+```
 ## Result
 
 https://drive.google.com/drive/folders/1b99Z1U0DFxgHCRWzdpKr7_ZUjMSr4feh?usp=sharing
